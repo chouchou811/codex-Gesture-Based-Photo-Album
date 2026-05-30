@@ -8,20 +8,7 @@ const photoLayer = document.getElementById("photoLayer");
 let pinchArmed = true;
 let currentPhoto = null;
 
-const photos = [
-  "./photos/photo-1.jpg",
-  "./photos/photo-2.jpg",
-  "./photos/photo-3.jpg",
-  "./photos/photo-4.jpg",
-  "./photos/photo-5.jpg",
-  "./photos/photo-6.jpg",
-  "./photos/photo-7.jpg",
-  "./photos/photo-8.jpg",
-  "./photos/photo-9.jpg",
-  "./photos/photo-10.jpg",
-  "./photos/photo-11.jpg",
-  "./photos/photo-12.jpg",
-];
+const photos = [];
 
 const entryAnimations = [
   "enter-zoom",
