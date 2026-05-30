@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绚烂星空手势相册</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="stage" id="stage">
+        <div class="stars" aria-hidden="true"></div>
+        <div class="glow glow-a" aria-hidden="true"></div>
+        <div class="glow glow-b" aria-hidden="true"></div>
+        <video id="camera" playsinline></video>
+        <div id="cursor" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p>手指闭合时，星光停住，并随机浮现一张照片。</p>
+        </div>
+        <div class="status">
+          <span id="cameraStatus">等待摄像头</span>
+          <span id="gestureStatus">张开手，等待闭合</span>
+        </div>
+        <div id="photoLayer" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
